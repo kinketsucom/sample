@@ -818,8 +818,8 @@
                                     </connections>
                                 </buttonCell>
                             </button>
-                            <avPlayerView fixedFrame="YES" controlsStyle="inline" translatesAutoresizingMaskIntoConstraints="NO" id="bRX-HH-9fY">
-                                <rect key="frame" x="0.0" y="106" width="480" height="231"/>
+                            <avPlayerView fixedFrame="YES" controlsStyle="inline" showsFrameSteppingButtons="YES" showsFullScreenToggleButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRX-HH-9fY">
+                                <rect key="frame" x="0.0" y="106" width="480" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </avPlayerView>
                         </subviews>

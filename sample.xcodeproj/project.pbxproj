@@ -13,6 +13,7 @@
 		84615F27203043570099F07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84615F25203043570099F07F /* Main.storyboard */; };
 		84615F33203043580099F07F /* sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84615F32203043580099F07F /* sampleTests.swift */; };
 		84615F3E203043580099F07F /* sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84615F3D203043580099F07F /* sampleUITests.swift */; };
+		848CBDF92049538C00032583 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848CBDF82049538C00032583 /* GStreamer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		84615F39203043580099F07F /* sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84615F3D203043580099F07F /* sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleUITests.swift; sourceTree = "<group>"; };
 		84615F3F203043580099F07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848CBDF82049538C00032583 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../../../Library/Frameworks/GStreamer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848CBDF92049538C00032583 /* GStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 				84615F31203043580099F07F /* sampleTests */,
 				84615F3C203043580099F07F /* sampleUITests */,
 				84615F1D203043570099F07F /* Products */,
+				848CBDF72049538B00032583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +126,14 @@
 				84615F3F203043580099F07F /* Info.plist */,
 			);
 			path = sampleUITests;
+			sourceTree = "<group>";
+		};
+		848CBDF72049538B00032583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848CBDF82049538C00032583 /* GStreamer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +431,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H29257Q683;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sekibotbot.sample;
@@ -435,6 +451,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H29257Q683;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sekibotbot.sample;
